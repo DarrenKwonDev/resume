@@ -39,14 +39,14 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \it\vspace{3pt}
-}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+  \vspace{6pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{2pt}]
 
 \pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
   \item{
-    {#1 \vspace{-4pt}}
+    {#1 \vspace{0pt}}
   }
 }
 
@@ -54,7 +54,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small #3} & \textit{\small #4} \\
+      {\small #3} & {\small #4} \\
     \end{tabular*}\vspace{-10pt}
 }
 
@@ -71,7 +71,7 @@
 
 
 \begin{center}
-    {\LARGE 권수훈} \\ \vspace{0pt}
+    {\LARGE 권수훈} \\ \vspace{20pt}
     \begin{multicols}{2}
     \begin{flushleft}
     \small{두 번의 창업 경험이 있는 개발자입니다.} \\
@@ -175,12 +175,12 @@
 
 %-----------SKILLS-----------
 \section{Skills}
-% This section can include programming or spoken languages, text editing and general software knowledge, certifications, version control or project management tools, or other skills that might be relevant. You can include as many or as few as you like: delete or add as needed.  
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \normalsize{\item{
-     \textbf{Programming Languages}{: javascript, python, go} \\
-     \textbf{Infra}{: GCP}\\
-    }}
- \end{itemize}
+
+\resumeItemListStart
+\small
+\resumeItem{\textbf{Programming Languages}{: javascript, python, go}}
+\resumeItem{\textbf{Infra}{: GCP}}
+
+\resumeItemListEnd
 
 \end{document}
