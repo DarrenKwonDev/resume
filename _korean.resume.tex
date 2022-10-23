@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 \usepackage{kotex} % 한국어
 \usepackage[utf8]{inputenc} 
 \usepackage{latexsym}
@@ -66,6 +66,7 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
+% start
 \begin{document}
 
 
@@ -73,34 +74,87 @@
     {\LARGE 권수훈} \\ \vspace{0pt}
     \begin{multicols}{2}
     \begin{flushleft}
-    \large{111 Street Ave} \\
-    \large{City, State, optional Country, Postal Code} \\
+    \small{두 번의 창업 경험이 있는 개발자입니다.} \\
+    \small{새로운 기술을 배우는 것을 즐기며} \\ 
+    \small{문서화를 좋아합니다.} \\ 
     \end{flushleft}
     
+    % this could be LinkedIn, GitHub, or a personal website or social media account (if used for professional purposes)
     \begin{flushright}
-% this could be LinkedIn, GitHub, or a personal website or social media account (if used for professional purposes)
-    \href{{url for any websites you want to link}} \large{text that will be linked to a url} \\
-% please ensure your email address is one you check
-    \href{mailto:{your email adress}} \large{email address}
+    \small{+82)10-6707-4624} \\
+    \href{https://github.com/DarrenKwonDev
+    }{github DarrenKwonDev} \\
+    \href{https://www.linkedin.com/in/kwon-darren-b94a8a214/
+    }{linkedin} \\
+    \href{mailto:{darrenkwondev46@gmail.com}} \large{darrenkwondev46@gmail.com}
     \end{flushright}
     \end{multicols}
 \end{center}
+
+
+%-----------Experience-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Experience}
+\resumeSubHeadingListStart
+
+% typed backend
+\resumeSubheading
+{Business Canvas(Typed)}{2022.09 -- Present}
+{Backend engineer}{데이터 팀을 조직하고 운영}
+\resumeItemListStart
+  \small
+  \resumeItem{GCP Cloud Run 관리 및 IaaC(terraform) 작성}
+  \resumeItem{data analyst를 위한 notebook container 운영}
+  \resumeItem{사내 지표 job 용 Fast Api 서버 관리}
+  \resumeItem{Event taxonomy 관리를 위한 Markup과 typescript validator 간 언어 변환}
+
+  \resumeItemListEnd
+
+% typed SWD
+\resumeSubheading
+{Business Canvas(Typed)}{2021.09 -- 2022.09}
+{SWE}{소프트웨어 개발 일반}
+\resumeItemListStart
+  \small
+  \resumeItem{레거시 번들 코드를 제거하고 webpack v4로 재작성}
+  \resumeItem{javascript 프로젝트를 typescript로 마이그레이션}
+  \resumeItem{store data mutation 비대화에 따라 웹 클라이언트 MVC 패턴을 MVVM 패턴으로 리팩토링}
+  \resumeItem{storybook, rollup, svgr을 활용하여 design system 개발, 패키징}
+  \resumeItem{absolute path, stylelint, eslint 등 도입으로 프론트엔드 DX 향상}
+  \resumeItem{플러터 모바일 어플리케이션 개발 및 빌드 스크립트 작성}
+
+  \resumeItemListEnd
+
+% goi
+\resumeSubheading
+{GOI Funeral LAB}{part-time}
+{SWE}{소프트웨어 개발 일반}
+\resumeItemListStart
+  \small
+  \resumeItem{Next를 활용한 정적 웹 페이지 개발}
+  \resumeItem{코드 컨벤션과 배포 절차 수립}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
 % Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
 \section{Education}
 \resumeSubHeadingListStart
-
-    \resumeSubheading
-        {College Univeristy Name}{Month Year studies began -- Present}
-        {degree and major you are pursuing}{City, State, optional Country}
-      \resumeSubheading
-        {Other School attended}{Month Year studies began -- Month Year studies ended}
-        {degree and major or coursework you pursued}{City, State, optional Country}
-
+  \resumeSubheading
+  {Seoul National University}{2014.03-2022.09}
+  {B.S in Business Venture and Entrepreneurship Management \& Korean literature}{}
 \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Seoul National University}{2014.03-2022.09}
+  {B.S in Business Venture and Entrepreneurship Management \& Korean literature}{}
+\resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
 \section{Research Experience}
@@ -118,30 +172,6 @@
 
 \resumeSubHeadingListEnd
 
-%-----------OTHER EXPERIENCE-----------
-\section{Other Experience}
-% if you have been employed, do volunteer activities, or have held other formal or informal jobs, you can list them here.   
-\resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Position title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
-      {University, Company or Organization}{City, State, optional Country}
-      \resumeItemListStart
-        \small\resumeItem{very short description of one thing you did}
-        \resumeItem{very short description of another thing you did}
-        \resumeItem{very short description if there was another thing you did}
-        \resumeItemListEnd
-
-    \resumeSubheading
-      {Another job title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
-      {University, Company or Organization}{City, State, optional Country}
-      \resumeItemListStart
-        \small\resumeItem{very short description of one thing you did}
-        \resumeItem{very short description of another thing you did}
-        \resumeItem{very short description if there was another thing you did}
-        \resumeItemListEnd
-
-\resumeSubHeadingListEnd
 
 %-----------RESEARCH PRESENTATIONS-----------
 \section{Research Presentations} 
