@@ -110,13 +110,18 @@
 \resumeSubheading
 {Business Canvas(Typed)}{2022.06 -- Present}
 {Backend engineer}{데이터 팀을 조직하고 운영}
+\vspace*{0pt}
 \resumeItemListStart
   \small
-  \resumeItem{유저 행동 분석을 위한 logging 서버 운영}
-  \resumeItem{airflow를 활용한 job 관리}
-  \resumeItem{사내 지표 관리를 위한 Fast API 서버 관리}
-  \resumeItem{GCP Cloud Run 관리 및 IaaC(terraform) 작성}
-  \resumeItem{Event taxonomy 관리를 위해 markup to typescript validator 변환 파서 작성}
+  % item 1
+  \resumeItem{사내 데이터 플랫폼 개발 및 운영}
+    \resumeItemListStart
+    \resumeItem{Airflow를 활용한 data orchestration. data ETL, reverseETL 관리}
+      \resumeItem{유저 행동 분석을 위한 logging 서버 운영}
+      \resumeItem{GCP Cloud Run 관리 및 IaaC(terraform) 작성}
+      \resumeItem{사내 지표 관리를 위한 Fast API 서버 관리}
+      \resumeItem{Event taxonomy 관리를 위해 kaitai를 활용한 markup to validator 변환 파서 작성}
+    \resumeItemListEnd
 
   \resumeItemListEnd
 
@@ -126,16 +131,25 @@
 {SWE}{소프트웨어 개발 일반}
 \resumeItemListStart
   \small
-  \resumeItem{레거시 번들 코드를 제거하고 webpack v4로 재작성}
-  \resumeItem{javascript 프로젝트를 typescript로 마이그레이션}
-  \resumeItem{store data mutation 비대화에 따라 웹 클라이언트 MVC 패턴을 MVVM 패턴으로 리팩토링}
-  \resumeItem{storybook, rollup, svgr을 활용하여 design system 개발, 패키징}
-  \resumeItem{absolute path, stylelint, eslint 등 도입으로 프론트엔드 DX 향상}
-  \resumeItem{플러터 모바일 어플리케이션 개발 및 빌드 스크립트 작성}
+  % item 1
+  \resumeItem{Web client}
+    \resumeItemListStart
+    \resumeItem{webpack v4로 번들 코드를 재작성}
+    \resumeItem{레거시 번들 코드를 제거하고 webpack v4로 재작성}
+    \resumeItem{javascript 프로젝트를 typescript로 마이그레이션}
+    \resumeItem{store data mutation 비대화에 따라 웹 클라이언트 MVC 패턴을 MVVM 패턴으로 리팩토링}
+    \resumeItem{storybook, rollup, svgr을 활용하여 design system 개발, 패키징}
+    \resumeItem{absolute path, stylelint, eslint 등 도입으로 프론트엔드 DX 향상}
+    \resumeItemListEnd
+    
+    \resumeItem{Mobile}
+    \resumeItemListStart
+    \resumeItem{플러터 모바일 어플리케이션 개발 및 빌드 스크립트 작성}
+    \resumeItemListEnd
+\resumeItemListEnd
 
-  \resumeItemListEnd
 
-% goi
+  % goi
 \resumeSubheading
 {GOI Funeral LAB}{part-time}
 {SWE}{소프트웨어 개발 일반}
