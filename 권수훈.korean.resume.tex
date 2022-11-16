@@ -117,11 +117,23 @@
   \resumeItem{사내 데이터 플랫폼 개발 및 운영}
     \resumeItemListStart
     \resumeItem{플랫폼 인프라 관리를 위한 IaaC(terraform) 작성}
-    \resumeItem{Airflow를 활용한 data orchestration. data ETL, reverseETL 관리}
+    \resumeItem{Airflow를 활용한 data orchestration}
+      \begin{itemize}
+        \item data ETL, reverseETL 관리
+      \end{itemize}
     \resumeItem{clickstream data 수집을 위한 logging 서버 운영}
     \resumeItem{metric 연산 서버(FastAPI) 관리}
+      \begin{itemize}
+        \item static type 도입 및 mypy를 활용한 type checking
+      \end{itemize}
     \resumeItem{goroutine을 활용하여 concurrent한 data ingestion}
+      \begin{itemize}
+        \item fan-in, fan-out pattern
+      \end{itemize}
     \resumeItem{Event taxonomy 관리를 위해 kaitai를 활용한 markup to validator 변환 파서 작성}
+      \begin{itemize}
+        \item 별도의 DDP(data discovery platform) 도입 없이 문서와 타입을 일치시키기 위함
+      \end{itemize}
     \resumeItemListEnd
 
   \resumeItemListEnd
