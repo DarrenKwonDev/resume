@@ -154,9 +154,10 @@
 #sectionHeader[Technical Skills]
 
 - PL
-  - C/C++ : libuv, algorithm  
+  - C/C++ : MFC, algorithm  
   - CPython : ruff, poetry, fastapi, uvloop, sqlalchemy, mypy, isort
   - javascript/typescript : node.js runtime, express, react, redux, gulp, webpack
+    
 - Infra
   - Database : postgresql, mongodb, sqlite, redis
   - server components : nginx, let's encrpyt
@@ -164,9 +165,10 @@
   - aws : VPC, NAT, ec2, s3, cloudfront, route53, lambda
   - gcp : Network, NAT, compute engine, GKE, cloud run
 - etc
-  - shell scripts and tools : bash
+  - shell script : bash
   - mark up language: latex, typst, html
   - git, git hook, pre-commit, husky, lint-staged
+  - pine script(TradingView), fast expression(WroldQuant)
 
 ////////////////////////////
 // Career Experience 
@@ -177,8 +179,8 @@
   "RTG", 
   "Software Engineer", 
   "development dept", 
-  "2024.02-")
-- system trading tools
+  "2024.02-Present")
+- system trading
 
 #careerHeader(
   "Business Canvas", 
@@ -216,6 +218,8 @@
   GCP에서 저렴하게 교육용 쿠버네티스를 운용하는 방법
 ]
 
+#v(3.5cm)
+
 
 ////////////////////////////
 // Education 
@@ -234,7 +238,6 @@
   "2014.03-2022.09 (+ 2 year of military service)"
 )
 
-#v(3.5cm)
 
 
 ////////////////////////////
