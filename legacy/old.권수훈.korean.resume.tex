@@ -1,0 +1,278 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{kotex} % 한국어
+\usepackage[utf8]{inputenc} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.1in}
+\addtolength{\textheight}{0.0in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{6pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{2pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+% start
+\begin{document}
+
+
+\begin{center}
+    {\LARGE 권수훈} \\ \vspace{20pt}
+    \begin{multicols}{2}
+    \begin{flushleft}
+    \small{두 번의 창업 경험이 있는 개발자입니다.} \\
+    \small{새로운 기술을 학습하고 도전하는 것을 즐기며} \\ 
+    \small{문서화를 좋아합니다.} \\ 
+    \end{flushleft}
+    
+    % this could be LinkedIn, GitHub, or a personal website or social media account (if used for professional purposes)
+    \begin{flushright}
+    \small{+82)10-6707-4624} \\
+    \href{https://github.com/DarrenKwonDev
+    }{github DarrenKwonDev} \\
+    \href{https://www.linkedin.com/in/kwon-darren-b94a8a214/
+    }{LinkedIn} \\
+    \href{mailto:{darrenkwondev46@gmail.com}} \large{darrenkwondev46@gmail.com}
+    \end{flushright}
+    \end{multicols}
+\end{center}
+
+
+%-----------Intro-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Introduce}
+\small{empty} \\
+% \small{두 차례의 창업 경험을 통해 제품의 라이프 사이클을 온전히 경험해 본 개발자입니다.} \\
+% \small{프로덕트의 본질과 유저 딜리버리를 중요시하며, 문서를 기반으로 한 조직 문화를 추구합니다.} \\
+% \small{현재 backend와 data engineering 분야에 대해 지속적으로 공부하고 현업에서 활용 중입니다.} \\
+
+
+%-----------Experience-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Experience}
+\resumeSubHeadingListStart
+
+% typed backend
+\resumeSubheading
+{Business Canvas(Typed)}{2022.06 -- 2023.02}
+{Backend engineer}{사내 데이터 팀을 조직하고 운영}
+\vspace*{0pt}
+\resumeItemListStart
+  \small
+  % item 1
+  \resumeItem{사내 데이터 플랫폼 개발 및 운영}
+    \resumeItemListStart
+    \resumeItem{플랫폼 인프라 관리를 위한 IaaC(terraform) 작성}
+    \resumeItem{Airflow를 활용한 data orchestration}
+      \begin{itemize}
+        \item data ETL, reverseETL 관리
+      \end{itemize}
+    \resumeItem{clickstream data 수집을 위한 logging 서버 운영}
+    \resumeItem{metric 연산 서버(FastAPI) 관리}
+      \begin{itemize}
+        \item static type 도입 및 mypy를 활용한 type checking
+      \end{itemize}
+    \resumeItem{goroutine을 활용하여 concurrent한 data ingestion}
+      \begin{itemize}
+        \item fan-in, fan-out pattern
+      \end{itemize}
+    \resumeItem{Event taxonomy 관리}
+    \resumeItemListEnd
+
+  \resumeItemListEnd
+
+% typed SWD
+\resumeSubheading
+{Business Canvas(Typed)}{2021.09 -- 2022.06}
+{SWE}{소프트웨어 개발 일반}
+\resumeItemListStart
+  \small
+  % item 1
+  \resumeItem{Web client}
+    \resumeItemListStart
+    \resumeItem{webpack v4로 번들 코드를 재작성}
+    \resumeItem{레거시 번들 코드를 제거하고 webpack v4로 재작성}
+    \resumeItem{javascript 프로젝트를 typescript로 마이그레이션 주도}
+    \resumeItem{store data mutation 비대화에 따라 웹 클라이언트 MVC 패턴을 MVVM 패턴으로 리팩토링}
+    \resumeItem{storybook, rollup, svgr을 활용하여 design system 개발, 패키징}
+    \resumeItem{absolute path, stylelint, eslint 등 도입으로 프론트엔드 DX 향상}
+    \resumeItemListEnd
+    
+    \resumeItem{Mobile}
+    \resumeItemListStart
+    \resumeItem{플러터 모바일 어플리케이션 개발 및 빌드 스크립트 작성}
+    \resumeItemListEnd
+\resumeItemListEnd
+
+
+  % goi
+\resumeSubheading
+{GOI Funeral LAB}{part-time}
+{SWE}{소프트웨어 개발 일반}
+\resumeItemListStart
+  \small
+  \resumeItem{Next를 활용한 정적 웹 페이지 개발}
+  \resumeItem{코드 컨벤션과 배포 절차 수립}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {NAVER Connect Foundation}{2023.03-2023.08}
+  {부스트캠프 AI Tech, 추천 시스템(Recommender System)}{}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Seoul National University}{2014.03-2022.09}
+  {B.S in Business Venture and Entrepreneurship Management \& Korean literature}{}
+\resumeSubHeadingListEnd
+
+
+%-----------Other Experience-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Other Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+  {Awards}{}
+  {}{}
+  \resumeItemListStart
+    \small
+    \resumeItem{한국벤처협회 PSWC 엑셀러레이팅 프로그램 수료}
+    \resumeItem{예비창업패키지 우수 등급 수료}
+
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Open Sources}{}
+  {}{}
+  \resumeItemListStart
+    \small
+    \resumeItem{\href{https://github.com/DarrenKwonDev/ko-fuzzy}{ko-fuzzy}: simple package for fuzzy matching in Korean}
+    \resumeItem{\href{https://www.npmjs.com/package/typed-design-system}{typed-design-system}: developed a design asset system}
+
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Certificates}{}
+  {}{}
+  \resumeItemListStart
+    \small
+    \resumeItem{SQLD}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Etc}{}
+  {}{}
+  \resumeItemListStart
+    \small
+    \resumeItem{영상작가전문교육원 수료}
+    \resumeItem{TIPS(민간투자주도형 기술창업지원) 지원 스타트업 자문 및 합격}
+
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\resumeItemListStart
+    \small
+    \resumeItem{\textbf{Programming Languages}}
+      \resumeItemListStart
+        \resumeItem{C/C++/CMake}
+        \resumeItem{Javascript/Typescript}
+        \resumeItemListStart
+          \resumeItem{express}
+          \resumeItem{type level programming이 가능하며 type 기반의 polymorphism을 이해하고 활용합니다.}
+        \resumeItemListEnd
+          \resumeItem{Python}
+        \resumeItemListStart
+          \resumeItem{비동기 프로그래밍에 대한 이해}
+          \resumeItem{ruff(linter), poetry(의존성 및 가상환경) 등을 비롯한 툴링을 활용할 수 있습니다.}
+        \resumeItemListEnd
+      \resumeItemListEnd
+
+      \resumeItem{\textbf{System}}
+      \resumeItemListStart
+      \resumeItem{Linux}
+        \resumeItemListStart
+        \resumeItem{기본적인 커맨드 작성 및 shell script 작성 가능}
+        \resumeItem{FHS(Filesystem Hierachy Standard)에 대한 이해}
+        \resumeItem{시스템 자원 모니터링}
+        \resumeItemListEnd
+    \resumeItem{Docker}
+      \resumeItemListStart
+      \resumeItem{docker compose를 활용한 개발 환경 구축 및 배포}
+      \resumeItemListEnd
+      \resumeItemListEnd
+    \resumeItem{\textbf{Public Cloud}}
+      \resumeItemListStart
+      \resumeItem{\textbf{AWS}{: EKS, lambda, EC2, CloudFront, S3}}
+      \resumeItem{\textbf{GCP}{: bigquery, cloud run, vpc, cloud storage}}
+      \resumeItemListEnd
+    \resumeItem{{영어 문서를 읽고 활용합니다.}}
+
+  \resumeItemListEnd
+
+\end{document}

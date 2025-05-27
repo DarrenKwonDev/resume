@@ -1,0 +1,11 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.gz
+node_modules
+.husky
+private
+certificate
+.DS_Store
