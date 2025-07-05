@@ -155,7 +155,7 @@
 #sectionHeader[과거 핵심 성과]
 
 - 일 최대 2억 수익, 연간 수익률 400% 이상의 핵심 전략의 포팅 프로젝트 리드 및 성공적으로 마무리   
-- CPU overclock & pinning 통한 core-to-core latency 20ns 달성 (benchmark by AIDA64)  
+- CPU overclock & pinning으로 core-to-core latency 20ns 달성 (benchmark by AIDA64)  
 - 문서, 코드를 확인할 수 없는 free pascal 기반의 레거시 서버를 C 로 포팅, 운영    
 
 
@@ -184,7 +184,7 @@
 
 - 트레이딩 시스템 개발
   - C++ 기반 가원장 신규 작성 및 테스트 프레임워크 도입  
-  - CPU overclock & pinning 통한 core-to-core latency 20ns 달성  
+  - CPU overclock & pinning 기반 core-to-core latency 20ns 달성  
   - 멀티프로세스 기반 실시간 시세 서버 개발 (120+ 프로세스 운영)
   - 시세 FEP 대응 및 배치/호가/체결/민감도 처리 시스템 구축
   - MFC 기반 트레이딩 모니터링 시스템 유지보수
